@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>About Me</title>
+	<link rel="stylesheet" type="text/css" href="asset/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="asset/css/style.css">
+</head>
+<body>
+	<header id="masthead">
+	<div class="container">	
+		<a href="index.html" id="logo">Gavin Ervin</a>
+		<nav>
+			<a href="index.html">About</a>
+			<a href="portfolio.html">Portfolio</a>
+			<a href="contact.html">Contact</a>
+		</nav>
+	</div>
+	</header>
+
+	<div id="main-container" class="container">
+		<section class="main-section">
+			<h1>Contact</h1>
+		<!--form with name email and comment -->
+		<!--submit comment form info to gavinervin47@gmail -->
+			<form id="contact form", action="mailto:gavinervin47@gmail.com" method="post" enctype="text/plain">
+				<ul>
+					<li>
+						<label for="name">Name</label>
+						<input type="text" name="name" id="name" placeholder="John Smith" required="required">				
+					</li>
+					<li>
+						<label for="email">Email</label>
+						<input type="text" name="email" id="email" placeholder="example@gmail.com" required="required">				
+					</li>
+					<li>
+						<label for="message">Message</label>
+						<textarea id="message" name="message" required="required"></textarea>
+					</li>
+				</ul>
+				<input type="submit" name="submit">
+			</form>
+
+		
+		</section>
+
+		<section class="sidebar">
+			<div id="connect">
+				<h2>Connect with Me</h2>
+
+				<img src="https://cdn0.iconfinder.com/data/icons/social-36/66/28-64.png" class="social" alt="Github">
+				<img src="https://cdn0.iconfinder.com/data/icons/social-flat-rounded-rects/512/linkedin-64.png" class="social" alt="LinkedIn">
+				<img src="https://cdn0.iconfinder.com/data/icons/social-flat-rounded-rects/512/overflow-64.png" class="social" alt="Stack Overflow">
+			</div>
+		</section>
+	</div>
+
+	<footer>
+		<div class="container">
+			&copy; Copyright 2017 Gavin Ervin
+		</div>
+	</footer>
+</body>
+</html>

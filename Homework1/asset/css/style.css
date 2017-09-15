@@ -245,5 +245,85 @@ input[type=submit]:hover {
 }
 /*submit button gets very dark when clicked */
 input[type=submit]:active {
-	background: #267370;
+	background: #267370; 
+}
+
+/*media responsive layout 980px*/
+
+
+@media only screen and (max-width: 980px) {
+	.container {
+		padding: 0 20px;
+		max-width: 768px;
+	}
+	#main-container {
+		padding-top: 130px;
+	}
+	.main-section {
+		max-width: 420px;
+	}
+	.work {
+		width: 100%;
+	}
+	.auth-image {
+		width: 100%;
+		margin-bottom: 10px;
+	}
+	/* could not figure out how to make the images in .work go into two columns in the size down*/
+}
+
+/* @ 768px */
+
+@media only screen and (max-width: 768px) {
+	.main-section {
+		max-width: 100%;
+	}
+	.sidebar {
+		max-width: 100%;
+		margin-bottom: 20px;
+	}
+	#main-container {
+		overflow: auto;
+	}
+
+}/* @ 640px */
+
+@media only screen and (max-width: 640px) {
+	#masthead {
+		position: static;
+		margin-bottom: 25px;
+	}
+	header.container {
+		padding: 0;
+	}
+
+	#logo, .work, .auth-image {
+		width:100%;
+	}
+	nav {
+		text-align: center;
+		width: 100%;
+		margin: 15px 0;
+	}
+	nav a {
+		width: 30%;
+		padding-left: 0;
+		margin-left: 0; 
+	}
+	/* i know it didnt match the req pic,
+	   just thought it looked better centered*/
+	h1, h2 {
+		text-align: center;
+
+
+	}/*tried a few ways to center the submit button
+	   failed miserably. tried to left-margin: 35%; worked on most px views, but off centered after a bit.
+	Also tried to margin the button over by a fixed value but never scaled properly.
+	figured full width would be the most visually gratifying.*/
+
+	input[type=submit] {
+		width: 100%;
+	}
+	/* tried to .social center my icons for connect with me, they would either grow too large 
+	    or bump the next icon to a new row. Could not figure out how to center the icons in the div. */
 }
